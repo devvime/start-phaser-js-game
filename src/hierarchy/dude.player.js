@@ -53,7 +53,6 @@ export const dudePlayer = {
       dudePlayer.states.player.setVelocityX(0)
       dudePlayer.states.player.anims.play('turn')      
     }
-    // Jump
     if (dudePlayer.states.cursors.up.isDown && dudePlayer.states.player.body.touching.down) {
       dudePlayer.states.player.setVelocityY(-330);
     }

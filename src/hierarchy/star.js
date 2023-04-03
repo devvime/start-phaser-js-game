@@ -26,11 +26,10 @@ export const star = {
         child.enableBody(true, child.x, 0, true, true)
       })
       let x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400)
-      let bombItem = bomb.states.bombs.create(x, 16, 'bomb');
-      bombItem.setBounce(1);
-      bombItem.setCollideWorldBounds(true);
-      bombItem.setVelocity(Phaser.Math.Between(-200, 200), 20);
-
+      let bombItem = bomb.states.bombs.create(x, 16, 'bomb')
+      bombItem.setBounce(1)
+      bombItem.setCollideWorldBounds(true)
+      bombItem.setVelocity(Phaser.Math.Between(-200, 200), 20)
     }
   }
 }
